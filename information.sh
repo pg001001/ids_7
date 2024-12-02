@@ -28,7 +28,7 @@ scan_information() {
     grep -r --color=always -i -E "invoice|billing|payment|receipt|bill|purchase|order|checkout|transaction" "${base_dir}/allurls.txt" >> "${base_dir}/information/pay.txt"
 
     # credentials
-    grep -r --color=always -i -E "register:|signin:|signup:|login:" "${base_dir}/allurls.txt" >> "${base_dir}/information/credentials.txt"
+    grep -r --color=always -i -E "registration:|register:|signin:|signup:|login:" "${base_dir}/allurls.txt" >> "${base_dir}/information/credentials.txt"
 
     # search sensitive files 
     grep -r --color=always -i -E "\.pdf" "${base_dir}/allurls.txt" >> "${base_dir}/information/pdfs_file.txt"
