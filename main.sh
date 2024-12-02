@@ -27,8 +27,4 @@ echo "Starting JavaScript file analysis..."
 # echo "Starting port scanning..."
 ./port_scan.sh "$domain"
 
-# Run files scanning 
-echo "Starting files scanning..."
-./sensitive_file_find.sh "$domain"
-
 echo "All tasks completed for ${domain}. Results are stored in the respective directories."

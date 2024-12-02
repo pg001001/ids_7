@@ -16,7 +16,7 @@ find_subdomains() {
     
     # sublist3r
     #echo "Running Sublist3r for ${domain}..."
-    # sublist3r2 -d "${domain}" -v -o "${base_dir}/sublist3r.txt"
+    sublist3r2 -d "${domain}" -v -o "${base_dir}/sublist3r.txt"
     
     # amass
     echo "Running Amass for ${domain}..."
